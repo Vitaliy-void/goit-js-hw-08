@@ -83,11 +83,7 @@ const galleryMarkup =
         
 listGallery.insertAdjacentHTML("afterbegin", galleryMarkup)
 const listItem = document.querySelectorAll(".gallery-item")
-// listItem.forEach(item => {
-//     item.addEventListener("click", event => {
-//         event.preventDefault()
-//     })
-// })
+
 listGallery.addEventListener("click", (event) => {
   if (event.target.nodeName !== "IMG") return;
   event.preventDefault();
